@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<h2>Comments</h2>
+
+
+@using (Html.BeginForm("SubmitComments", "Home"))
+{
+    <input type="text" id="ss" name="comments" />
+    <input type="submit" value="SubmitComments" />
+    
+}
+
+
+<input type="button" value="Create" onclick="location.href='@Url.Action("Contact", "Home")'" />
+
